@@ -1,0 +1,122 @@
+body{
+    background-color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav {
+   
+    box-shadow: 1px 8px 8px rgb(241, 241, 241);
+   
+}
+h1{
+text-align: center;
+    padding: 50px;
+}
+h3{
+font-size: 13px;
+text-align: justify;
+color: #ffffff;
+}
+.inner_padding{
+  padding: 10px;
+}
+.faq_grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    list-style: none;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
+.app_grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
+.faq_grid li{
+    background-color: #111;
+        
+    width: 370px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;
+    font-size: 15px;
+    color: rgb(122, 122, 122);
+    white-space: wrap;
+   
+}
+.app_grid li {
+    background-color: #111;
+        color: #ffffff;
+    width: 370px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 40px;
+    
+}
+.app_grid li h3{
+    color: #ffffff;
+}
+
+.card_container{
+background-color: #111;
+    color: #ffffff;
+    width: 1150px;
+    height: 100px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    border-radius: 20px;
+
+}
+
+.card_container ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+  }
+
+  .card_container ul li{
+    text-decoration: none;
+ margin: 30px;
+  }
+
+  .card_container ul li a {
+      text-decoration: none;
+      width: 70px;
+        height: 30px;
+        background: green;
+     width: 100px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+       
+  }
+ 
+
+  .font_light{
+    color: rgb(122, 122, 122);
+    text-align: left;
+  }
+
+  .text_left h3{
+    text-align: left;
+  }
+
+  .text_left h3 {
+      text-align: left;
+  }

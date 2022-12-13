@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+nav{
+    margin:0;
+    top:0;
+    height:65px;
+   
+}
+.nav{
+box-shadow: none;
+}
+.page-header{
+    background-image:url("pexels-richard-badejo-5409298.jpg"),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-repeat: no-repeat;
+    width: 100%;
+    background-blend-mode: overlay;
+    background-position: center;
+        background-size: cover;
+    height: 300px;
+
+}
+.page-header h1{
+ color: #ffffff;
+ font-size: 50px;
+ font-weight: 800;
+ padding: 100px;
+}
+body{
+    background-color: white;
+font-family: 'Work Sans', sans-serif;
+    
+}
+/* body::after{
+    content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+background-image: url("LAGOS.jpg");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        opacity: 0.4;
+        z-index: -1;
+} */
+/* nav{
+    background-color: white;
+    opacity: none;
+    height: 65px;
+    display: flex;
+        justify-content: space-between;
+        align-content: center;
+        /* box-shadow: 1px 5px 8px rgb(218, 216, 216); */
+        /* margin-bottom: 10px;
+        white-space: nowrap;
+        top: 0;
+        position: relative;
+} */ 
+/* 
+.logo_container {
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+} */
+
+/* .page_links{
+text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-left: 50px;
+} */
+
+.form_container{
+    width: 800px;
+        margin: 0 auto;
+        padding: 80px;
+        background-color: #111;
+        color: #ffffff;
+        border-radius: 20px;
+        /* background-image: url("abstract-364.png");
+            background-repeat: no-repeat; */
+            
+}
+form{
+  
+   text-align: left;
+  
+}
+input{
+    margin-bottom: 20px;
+}
+
+.font_light{
+color: rgb(122, 122, 122);
+}
+ select:required:invalid {
+     color: #666;
+ }
+ select option{
+     border-radius:none;
+ }
+input,select{
+    text-align: left;
+    width: 500px;
+    height: 35px;
+    border:0.5px solid rgb(194, 193, 193);
+    border-radius: 3px;
+    background-color:  white;
+    padding: 5px;
+}
+
+.form_flex input, .form_flex select{
+    width: 640px;
+}
+
+input:focus,select:focus{
+outline: none;
+}
+
+label{
+
+    font-weight: 400;
+}
+
+input.invalid {
+    border: 1.5px solid ;
+border-color: rgb(175, 3, 3);
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+#prevBtn{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+background-color: #cccccc;
+color: white;
+}
+
+#nextBtn {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+background-color: #04AA6D;
+color: white;
+}
+
+.forgot_password a{
+    color: rgb(131, 130, 130);
+    text-decoration: none;
+   
+}
+
+.forgot_password{
+text-align: right;
+}
+
+.forgot_password a:hover{
+    color: #04AA6D;
+}
+.submit{
+    padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #04AA6D;
+        color: white;
+        width: 500px;
+            height: 35px;
+}
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+.custom-select {
+    position: relative;
+    
+}
+
+.select-selected {
+    background-color: rgb(255, 255, 255);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid black;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(0, 0, 0) transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    border: 0.5px solid ;
+    border-color: rgb(194, 193, 193);
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items div{
+border-color: #04AA6D;
+color: white;
+}
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    color: white;
+    background-color: #04AA6D;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.tab h1{
+    text-align: center;
+}
+/* .form_flex{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3rem;
+    justify-content: center;
+} */
+.upload_btn{
+   
+            background-color: #04AA6D;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+      
+}
+#file-chosen {
+    margin-left: 0.3rem;
+    color: rgb(122, 122, 122);
+    
+}
+footer {
+    /* margin-top: 100px; */
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
